@@ -1,0 +1,10 @@
+/* Definindo a cor azul claro para o cabeçalho e rodapé */
+.bg-light-blue {
+    background-color: #8f74ce; /* Cor azul claro */
+  }
+  
+  /* Ajuste no fundo do rodapé */
+  footer {
+    background-color: #8f74ce; /* Um tom de azul um pouco mais escuro */
+  }
+  

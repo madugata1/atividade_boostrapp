@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de Layout</title>
+  <!-- Link do Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Link para o CSS personalizado -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Cabeçalho com Menu -->
+  <header class="bg-light-blue">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Calçados Importes</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="menu">
+            <div class="menu-toggle" onclick="toggleMenu()"></div>
+            <li class="nav-item">
+              <a class="nav-link" href="produtos.html">Produtos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="serviços.html">Serviços</a>
+            </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Inicio</a>
+        </li>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="contato.html">Contatos</a>
+    </li>
+       </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main class="container mt-5">
+    <h1>Bem-vindo ao nosso site da Nike!</h1>
+    <p>Aqui você encontra informações sobre nossos serviços, produtos e muito mais.</p>
+  </main>
+
+  <!-- Carrossel Centralizado -->
+  <div class="container mt-5 d-flex justify-content-center">
+    <div id="carouselExample" class="carousel slide" style="width: 40%;">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/air max 95rosa.webp" class="d-block w-100" alt="Imagem 1">
+        </div>
+        <div class="carousel-item">
+          <img src="img/tn pink rise.png" class="d-block w-100" alt="Imagem 2">
+        </div>
+        <div class="carousel-item">
+          <img src="img/tn purple dragon.png" class="d-block w-100" alt="Imagem 3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="bg-light-blue text-center text-white py-3 mt-5">
+    <p>&copy; 2025 - Calçados Importes</p>
+  </footer>
+  <!-- Scripts do Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

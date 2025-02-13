@@ -1,0 +1,136 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Cor azul claro para o cabeçalho e rodapé */
+  .bg-light-blue {
+    background-color: #8f74ce; /* Azul claro */
+  }
+  
+  /* Cabeçalho */
+  header {
+    color: white;
+    padding: 1rem 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+  }
+  
+  .navbar .logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu li {
+    margin: 0 1rem;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+  }
+  
+  /* Menu Negável */
+  .menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  
+  
+  /* Carrossel */
+  .carousel {
+    margin-top: 4%;
+    margin-bottom: 4%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-images img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+  
+  /* Grid de Produtos */
+  .products {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .products h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  .product img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .product {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  button {
+    background-color: #8f74ce;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #6d58a4;
+  }
+  
+  /* Rodapé */
+  footer {
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  footer p {
+    margin: 0.5rem 0;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .product-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
