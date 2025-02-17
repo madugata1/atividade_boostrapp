@@ -4,34 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contato - Calçados Importes</title>
+  <!-- Link para o CSS separado -->
   <link rel="stylesheet" href="style4.css">
 </head>
 <body>
   <!-- Cabeçalho -->
-  <header class="bg-light-blue">
+  <header>
+    <div class="logo">
+      <a href="#">Calçados Importes</a>
+    </div>
     <nav class="navbar">
-      <div class="logo">
-        <a href="">Calçados Importes</a>
-      </div>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-        </li>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+      <ul id="navbarNav">
         <li class="nav-item">
           <a class="nav-link" href="produtos.html">Produtos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="serviços.html">Serviços</a>
+          <a class="nav-link" href="servicos.html">Serviços</a>
         </li>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="index.html">Inicio</a>
-    </li>
-</li>
-<li class="nav-item">
-  <a class="nav-link" href="contato.html">Contato</a>
-</li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Início</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contato.html">Contato</a>
+        </li>
+      </ul>
     </nav>
   </header>
+
+  <script>
+    // Adicionando funcionalidade para o menu hamburguer
+    const hamburger = document.getElementById('hamburger');
+    const navbarNav = document.getElementById('navbarNav');
+
+    hamburger.addEventListener('click', () => {
+      navbarNav.classList.toggle('active');
+    });
+  </script>
 
   <!-- Seção de Contato -->
   <section class="contact">
@@ -56,14 +65,14 @@
 
     <div class="contact-details">
       <h3>Informações de Contato</h3>
-      <p><strong>Endereço:</strong>Brasília,taguantinga. taguacenter</p>
+      <p><strong>Endereço:</strong> Brasília, Taguatinga. Taguacenter</p>
       <p><strong>Telefone:</strong> (61) 4452-8955</p>
       <p><strong>E-mail:</strong> calcadosimportes@gmail.com</p>
     </div>
   </section>
 
-   <!-- Rodapé -->
-   <footer class="bg-light-blue text-center text-white py-3 mt-5">
+  <!-- Rodapé -->
+  <footer class="bg-light-blue text-center text-white py-3 mt-5">
     <p>&copy; 2025 - Calçados Importes</p>
   </footer>
 
